@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- the following <meta> tag defines how mobile devices should render the page. -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+        <title>contact us - cloudycaps</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/contact.css">
+    </head>
+    <body>
+           <!-- Navbar section-->
+    <nav class="navbar">
+      <ul> 
+          <li><a href="../HTML/home.html"><div class="avatar"><img src="../images/cute-gif.gif" alt="winking gif" class="images" id="logo"></div></a></li> 
+          <li><a class="" href="../HTML/home.html"><span class="underline-on-hover">cloudycaps</span></a></li>
+          <li><a href="../HTML/about.html"><span class="underline-on-hover">about</span></a></li>
+          <li><a href="../HTML/contact_us.html"><span class="underline-on-hover">contact</span></a></li>
+          <li><a href="../HTML/fulfillment_form.html"><span class="underline-on-hover">form</span></a></li>
+          <li><a href="../HTML/sign-in.html"><span class="underline-on-hover">sign in</span></a></li>
+      </ul>
+  </nav>
+    <div class="main">
+        <h1>need help?</h1>
+        <p>responses from our customer service team typically take anywhere from 2 to 5 business days. 
+            please provide as much information as possible so that our team can assist you better!</p>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Contact me</legend>
+                <div class="form-control">
+                  <label for="name">Name</label>
+                  <input type="name" id="name" placeholder="Enter your name" required />
+                </div>
+        
+                <div class="form-control">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+        
+                <div class="form-control">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Please write your question or a description of the problem you’re trying to solve here."
+                    required
+                  ></textarea>
+                </div>
+                <input type="submit" value="Send" class="submit-btn" />
+              </fieldset>
+        </form>
+      </div>
+    </body>
+</html>
