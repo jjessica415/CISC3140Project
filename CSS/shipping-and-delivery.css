@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+    padding: 0px;
+  }
+        /* by setting the position as fixed, it locks the navbar to the top of the page */
+  
+  /* .navbar will get applied to your div and then subsequently to everything that is within it */
+  .navbar {
+      display: flex;
+      overflow: hidden;
+      background-color: #fffbf0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+  /* .navbar a will only get applied to the <a> tag inside the div with class=navbar */
+    .navbar a {
+      float: right;
+      display: block;
+      color: #b6977d;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      font-family: "Lucida Console", Courier, monospace;
+    }
+  
+    
+    /* .navbar a:hover {
+      background: #ddd;
+      color: black;
+    } */
+    
+    .main {
+      font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+      margin: 100px 0px 0px 0px;
+      /* max-width: 100%; */
+      background-color: #FAE0E4;
+      height: 500px; 
+      display: flex;
+      justify-content: center;
+      color: #b6977d;
+      /* Used in this example to enable scrolling */
+    }
+  
+  .navbar li {
+      display: inline-block;
+      padding: 0 20px;
+  }
+  
+  .avatar {
+      border-radius: 100%;
+      display: inline-block;
+      filter:drop-shadow(1px 1px 1px peachpuff);
+      vertical-align: middle;
+  }
+  
+  #logo {
+      width:50px;
+      height:50px;
+      border-radius: 50%;
+  }
+  
+  .underline-on-hover:hover {
+    text-decoration: underline;
+  } 
+  
+  
+  
+  #cloudycaps {
+    border-radius: 20px;
+    height: 500px;
+    /* border-style: dashed;
+    border-color: peachpuff; */
+  }
+  
+  /* .logo-container {
+    max-width: 100%;
+  } */
+  
+  #sign-in {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .topnav-icons {
+    float: right;
+  }
+  
+  

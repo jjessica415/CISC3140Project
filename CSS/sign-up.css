@@ -31,10 +31,11 @@ body{
     display: block;
     color: #b6977d;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 16px;
     text-decoration: none;
-    font-size: 17px;
-    font-family: "Lucida Console", Courier, monospace;
+    font-size: 15px;
+    /* font-family: "Lucida Console", Courier, monospace; */
+    font-family: Poppins;
   }
   
   /* .navbar a:hover {

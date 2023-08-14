@@ -7,60 +7,80 @@
         <link rel="stylesheet" type="text/css" href="../CSS/form.css">
     </head>
     <body>
-              <!-- Navbar section-->
-    <nav class="navbar">
-        <ul> 
-            <li><a href="../HTML/home.html"><div class="avatar"><img src="../images/cute-gif.gif" alt="winking gif" class="images" id="logo"></div></a></li> 
+      <!-- Navbar section-->
+      <nav class="navbar">
+        <ul>
+            <li><a href="../HTML/home.html"><div class="avatar"><img src="../images/cute-gif.gif" alt="winking gif" class="images" id="logo"></div></a></li>
             <li><a class="" href="../HTML/home.html"><span class="underline-on-hover">cloudycaps</span></a></li>
             <li><a href="../HTML/about.html"><span class="underline-on-hover">about</span></a></li>
             <li><a href="../HTML/contact_us.html"><span class="underline-on-hover">contact</span></a></li>
-            <li><a href="../HTML/fulfillment_form.html"><span class="underline-on-hover">form</span></a></li>
-            <li><a href="../HTML/sign-in.html"><span class="underline-on-hover">sign in</span></a></li>
+            <li><a href="../HTML/fulfillment_form.html"><span class="underline-on-hover">commission form</span></a></li>
+            <li><a href="../HTML/sign-in.html"><div class="topnav-icons"><img src="../images/user.png" alt="user icon" class="images" id="sign-in"></div></a></li>
         </ul>
     </nav>
         <div class="main">
             <form action="../PHP/form_page.php" method="POST">
-                <p>
-                <label>Full Name</label><br>
-                <input type="text" name="nm"><br>
-                </p>
-                <p>
-                <label>Instagram Username</label><br>
-                <input type="text" name="ig"><br>
-                </p>
-                <p>
-                <label>Paypal Email</label><br>
-                <input type="text" name="email"><br>
-                </p>
-                <p>
-                <label>How many keycaps would you like to purchase?</label><br>
-                <input type="radio" name="amount" value="one"><label>1 keycap: $65 + shipping!</label><br>
-                <input type="radio" name="amount" value="two"><label>2 keycaps: $130 + shipping!</label><br>
-                </p>
-                <p>
-                <label>Shipping Address<br>Please enter using the format:<br>Full Name<br>Street Address<br>City, State/Province Zipcode<br>Country</label><br>
-                <input type="text" name="address"><br>
-                </p>
-                <p>
-                <label>Would you like me to contact you through Instagram DM about the fulfillment slot?</label><br>
-                <input type="radio" name="q1" value="yes"><label>Yes</label><br>
-                <input type="radio" name="q1" value="no"><label>No, just the Paypal invoice is fine!</label><br>
-                </p>
-                <p>
-                <label>Shipping to:</label><br>
-                <input type="radio" name="shipping" value="USA"><label>USA ( $5 USD )</label><br>
-                <input type="radio" name="shipping" value="Canada"><label>Canada ( $17 USD )</label><br>
-                <input type="radio" name="shipping" value="International"><label>International ( $18 + USD )</label><br>
-                </p>
-                <p>
-                <label>Keycap Finish</label><br>
-                <input type="radio" name="finisher" value="glaze"><label>Glossy</label><br>
-                <input type="radio" name="finisher" value="matte"><label>Matte</label><br>
-                </p>
-                <p>
-                    <input type="Submit" name="submit" value="Submit">
-                    <input type="reset" name="reset" value="Reset"> 
-                </p>
+                <div>
+                    <p>
+                        <label>Full Name</label><br>
+                        <input type="text" name="nm"><br>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label>Instagram Username</label><br>
+                        <input type="text" name="ig"><br>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label>Paypal Email</label><br>
+                        <input type="text" name="email"><br>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label>How many keycaps would you like to purchase?</label><br>
+                        <input type="radio" name="amount" value="one"><label>1 keycap: $65 + shipping!</label><br>
+                        <input type="radio" name="amount" value="two"><label>2 keycaps: $130 + shipping!</label><br>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label>Shipping Address<br>Please enter using the format:<br>Full Name<br>Street Address<br>City, State/Province
+                            Zipcode<br>Country</label><br>
+                        <input type="text" name="address"><br>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label>Would you like me to contact you through Instagram DM about the fulfillment slot?</label><br>
+                        <input type="radio" name="q1" value="yes"><label>Yes</label><br>
+                        <input type="radio" name="q1" value="no"><label>No, just the Paypal invoice is fine!</label><br>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label>Shipping to:</label><br>
+                        <input type="radio" name="shipping" value="USA"><label>USA ( $5 USD )</label><br>
+                        <input type="radio" name="shipping" value="Canada"><label>Canada ( $17 USD )</label><br>
+                        <input type="radio" name="shipping" value="International"><label>International ( $18 + USD )</label><br>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label>Keycap Finish</label><br>
+                        <input type="radio" name="finisher" value="glaze"><label>Glossy</label><br>
+                        <input type="radio" name="finisher" value="matte"><label>Matte</label><br>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <input type="Submit" name="submit" value="Submit">
+                        <input type="reset" name="reset" value="Reset">
+                    </p>
+                </div>
+               
               
             </form>
         </div>
