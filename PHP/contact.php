@@ -1,16 +1,10 @@
 <?php
+
 $name = $_POST['nm'];
-$insta = $_POST['ig'];
-$mail = $_POST['email'];
-$amt = $_POST['amount'];
-$add = $_POST['address'];
-$ques = $_POST['q1'];
-$ship = $_POST['shipping'];
-$fin= $_POST['finisher'];
-$optn = "";
-foreach ($name as $t) {
-    $optn = $optn.$t.",";
-}
+$email = $_POST['mail'];
+$message = $_POST['msg'];
+
+
 
 // database details
 $host = "localhost";
@@ -26,8 +20,10 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO data_table ('Name', 'Username', 'Email', 'Amount', 'Address', 'Contact', 'Shipping', 'Finisher') 
-        VALUES ('$name','$insta','$mail','$amt','$add','$ques','$ship','$fin')";
+//$sql = "INSERT INTO 'form_info' ('Name', 'Username', 'Email', 'Amount', 'Address', 'Contact', 'Shipping', 'Finisher') 
+        //VALUES ('$name','$insta','$mail','$amt','$add','$ques','$ship','$fin')";
+
+$sql ="INSERT INTO `contact_info`(`name`, `email`, `message`) VALUES ('$name','$email','$message')";
 
 $rs = mysqli_query($conn, $sql);
 

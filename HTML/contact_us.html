@@ -6,13 +6,16 @@
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
         <title>contact us - cloudycaps</title>
         <link rel="stylesheet" type="text/css" href="../CSS/contact.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     </head>
     <body>
     <!-- Navbar section-->
     <nav class="navbar">
       <ul>
-          <li><a href="../HTML/home.html"><div class="avatar"><img src="../images/cute-gif.gif" alt="winking gif" class="images" id="logo"></div></a></li>
-          <li><a class="" href="../HTML/home.html"><span class="underline-on-hover">cloudycaps</span></a></li>
+          <li><a href="../HTML/home.html"><div class="avatar"><img src="../images/images-removebg-preview.png" alt="keycap icon" class="images" id="logo"><span class="underline-on-hover">cloudycaps</span></div></a></li>
+          <li><a href="../HTML/shipping-and-delivery.html"><span class="underline-on-hover">shipping & delivery</span></a></li>
           <li><a href="../HTML/about.html"><span class="underline-on-hover">about</span></a></li>
           <li><a href="../HTML/contact_us.html"><span class="underline-on-hover">contact</span></a></li>
           <li><a href="../HTML/fulfillment_form.html"><span class="underline-on-hover">commission form</span></a></li>
@@ -20,40 +23,31 @@
       </ul>
   </nav>
     <div class="main">
-        <h1>need help?</h1>
-        <p>responses from our customer service team typically take anywhere from 2 to 5 business days. 
-            please provide as much information as possible so that our team can assist you better!</p>
-        <form action="" method="POST">
-            <fieldset>
-                <legend>Contact me</legend>
-                <div class="form-control">
-                  <label for="name">Name</label>
-                  <input type="name" id="name" placeholder="Enter your name" required />
-                </div>
-        
-                <div class="form-control">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="Enter your email"
-                    required
-                  />
-                </div>
-        
-                <div class="form-control">
-                  <label for="message">Message</label>
-                  <textarea
-                    id="message"
-                    cols="30"
-                    rows="10"
-                    placeholder="Please write your question or a description of the problem you’re trying to solve here."
-                    required
-                  ></textarea>
-                </div>
-                <input type="submit" value="Send" class="submit-btn" />
-              </fieldset>
-        </form>
+        <div class="container">
+          <div class="content">
+              <div class="contact-form">
+                  <h2 class="form-title">CONTACT US</h2>
+                  <form action="../PHP/contact.php" method="POST" class="contact-form" id="contact-form">
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" name="nm"id="name" placeholder="Full Name" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="mail" id="email" placeholder="Email Address" required>                      
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea rows="10" name="msg" placeholder="Please write your question or a description of the problem you’re trying to solve here." required></textarea>                      </div>
+                      <div class="form-group form-button">
+                          <input type="submit" name="submit" id="submit" class="form-submit" value="Submit"/>
+                      </div>
+                  </form>
+              </div>
+          </div>
       </div>
+
+    </div>
     </body>
 </html>
+

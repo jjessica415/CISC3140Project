@@ -35,7 +35,7 @@
 // }
          
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 16, 2023").getTime();
+var countDownDate = new Date("Aug 25, 2023").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -53,7 +53,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = "Countdown to New Year 2024: "+ days + " days " + hours + " hours "
+  document.getElementById("demo").innerHTML = "Next Keycap Design Drops In: "+ days + " days " + hours + " hours "
   + minutes + " minutes " + seconds + " seconds ";
 
   var col = Math.floor(Math.random() * 1000000);
@@ -66,3 +66,5 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+

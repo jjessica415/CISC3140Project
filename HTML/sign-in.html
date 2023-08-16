@@ -11,18 +11,18 @@
         <!-- Navbar section-->
         <nav class="navbar">
             <ul>
-                <li><a href="../HTML/home.html"><div class="avatar"><img src="../images/cute-gif.gif" alt="winking gif" class="images" id="logo"></div></a></li>
-                <li><a class="" href="../HTML/home.html"><span class="underline-on-hover">cloudycaps</span></a></li>
+                <li><a href="../HTML/home.html"><div class="avatar"><img src="../images/images-removebg-preview.png" alt="keycap icon" class="images" id="logo"><span class="underline-on-hover">cloudycaps</span></div></a></li>
+                <li><a href="../HTML/shipping-and-delivery.html"><span class="underline-on-hover">shipping & delivery</span></a></li>
                 <li><a href="../HTML/about.html"><span class="underline-on-hover">about</span></a></li>
                 <li><a href="../HTML/contact_us.html"><span class="underline-on-hover">contact</span></a></li>
                 <li><a href="../HTML/fulfillment_form.html"><span class="underline-on-hover">commission form</span></a></li>
                 <li><a href="../HTML/sign-in.html"><div class="topnav-icons"><img src="../images/user.png" alt="user icon" class="images" id="sign-in"></div></a></li>
             </ul>
-        </nav>  
+        </nav>
     </header>
     <main>
         <div class="main">
-            <!-- Sing in  Form -->
+            <!-- Sign-in  Form -->
             <section class="sign-in">
                 <div class="container">
                     <div class="signin-content">
@@ -33,23 +33,16 @@
 
                         <div class="signin-form">
                             <h2 class="form-title">Sign in</h2>
-                            <form method="POST" class="register-form" id="login-form">
+                            <form action="../PHP/sign-in.php" method="POST" class="register-form" id="login-form">
+                                
                                 <div class="form-group">
-                                    <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="your_name" id="your_name" placeholder="Your Name" />
+                                    <input type="email" name="your_email" id="your_email" placeholder="Email"/>
                                 </div>
                                 <div class="form-group">
-                                    <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
                                     <input type="password" name="your_pass" id="your_pass" placeholder="Password" />
                                 </div>
-                                <div class="form-group">
-                                    <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                                    <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember
-                                        me</label>
-                                </div>
                                 <div class="form-group form-button">
-                                    <input type="submit" name="signin" id="signin" class="form-submit"
-                                        value="Sign in" />
+                                    <input type="submit" name="signin" id="signin" class="form-submit" value="Sign in" />
                                 </div>
                             </form>
                         </div>

@@ -159,13 +159,13 @@ body {
     /* font-family: "Lucida Console", Courier, monospace; */
     /* font-family: "PT Sans", Calibri, Tahoma, sans-serif; */
     padding: 16px;
-    margin: 100px 50px;
-    height: 1500px; /* Used in this example to enable scrolling */
+    margin: 100px 150px;
     display: flex;
     flex-direction: column; 
     /* to change the gap in between use "column-gap" */
     ;
   }
+
 
 .navbar li {
     display: inline-block;
@@ -184,8 +184,8 @@ body {
     vertical-align: middle;
 }
 #logo {
-    width:65px;
-    height:65px;
+    width:55px;
+    height:55px;
     border-radius: 50%;
 }
 .underline-on-hover:hover {
@@ -195,8 +195,8 @@ body {
 .images { 
     top:-50px; 
     left:-35px; 
-    display:block; 
-    z-index:999; 
+    display: inline-block; 
+    z-index: 999; 
     cursor: pointer; 
     -webkit-transition-property: all; 
     -webkit-transition-duration: 0.3s; 
@@ -209,11 +209,19 @@ body {
     
     }
 
+    img {
+        display: inline-block;
+        margin: 0px, 10px, 0px, 0px;
+
+    }
+
 #eri-flower {
     width: 200px;
     height: auto;
+    margin: 0 30px 0 0;
     /* mix-blend-mde: multiply; */
     float: left;
+
     
 }
 
@@ -238,4 +246,8 @@ body {
   
   .topnav-icons {
     float: right;
+  }
+
+  h1{
+    color: #b6977d;
   }
