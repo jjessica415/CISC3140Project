@@ -219,7 +219,6 @@ body {
     width: 200px;
     height: auto;
     margin: 0 30px 0 0;
-    /* mix-blend-mde: multiply; */
     float: left;
 
     
@@ -228,14 +227,13 @@ body {
 #eri-sleepy {
     width: 200px;
     height: auto;
-    /* mix-blend-mode: multiply; */
     float: right;
 }
 
-#eri-gif {
-    width: auto;
-    height: 300px;
-    /* mix-blend-mode: multiply; */
+#eri-bread {
+    width: 170px;
+    height: auto;
+    margin: 0 50px 0 0;
     float: left;
 }
 
