@@ -116,6 +116,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 50
   }
 /* .navbar a will only get applied to the <a> tag inside the div with class=navbar */
 .navbar a {

@@ -1,89 +1,171 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>fulfillment form - cloudycaps</title>
-        <link rel="stylesheet" type="text/css" href="../CSS/form.css">
-    </head>
-    <body>
-        <header>
-            <!-- Navbar section-->
-        <nav class="navbar">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>fulfillment form - cloudycaps</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/form.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar section-->
+      <nav class="navbar">
         <ul>
-            <li><a href="../HTML/home.html"><div class="avatar"><img src="../images/images-removebg-preview.png" alt="keycap icon" class="images" id="logo"><span class="underline-on-hover">cloudycaps</span></div></a></li>
-            <li><a href="../HTML/shipping-and-delivery.html"><span class="underline-on-hover">shipping & delivery</span></a></li>
-            <li><a href="../HTML/about.html"><span class="underline-on-hover">about</span></a></li>
-            <li><a href="../HTML/contact_us.html"><span class="underline-on-hover">contact</span></a></li>
-            <li><a href="../HTML/fulfillment_form.html"><span class="underline-on-hover">commission form</span></a></li>
-            <li><a href="../HTML/sign-in.html"><div class="topnav-icons"><img src="../images/user.png" alt="user icon" class="images" id="sign-in"></div></a></li>
+          <li>
+            <a href="../HTML/home.html"
+              ><div class="avatar">
+                <img
+                  src="../images/images-removebg-preview.png"
+                  alt="keycap icon"
+                  class="images"
+                  id="logo"
+                /><span class="underline-on-hover">cloudycaps</span>
+              </div></a
+            >
+          </li>
+          <li>
+            <a href="../HTML/shipping-and-delivery.html"
+              ><span class="underline-on-hover">shipping & delivery</span></a
+            >
+          </li>
+          <li>
+            <a href="../HTML/about.html"
+              ><span class="underline-on-hover">about</span></a
+            >
+          </li>
+          <li>
+            <a href="../HTML/contact_us.html"
+              ><span class="underline-on-hover">contact</span></a
+            >
+          </li>
+          <li>
+            <a href="../HTML/fulfillment_form.html"
+              ><span class="underline-on-hover">commission form</span></a
+            >
+          </li>
+          <li>
+            <a href="../HTML/sign-in.html"
+              ><div class="topnav-icons">
+                <img
+                  src="../images/user.png"
+                  alt="user icon"
+                  class="images"
+                  id="sign-in"
+                /></div
+            ></a>
+          </li>
         </ul>
-         </nav>
-            
-        </header>
-      <main>
-        <div class="main">
-            <div class="container">
-            <div class="signin-content">
-                <div class="signin-image">
-                    <figure><img src="../images/cloudycaps-removebg.png" alt="sign up image"></figure>
-                </div>
-                <div class="signin-form">
-                    <h2 class="form-title">Commission Form</h2>
-            <form action="../PHP/fulfillment.php" method="POST" class="register-form" id="register-form">
-                <div class="form-group">
-                        <input type="text" name="nm" placeholder="Full Name"><br>
-                </div>
-                <div class="form-group">
-                        <input type="text" name="ig" placeholder="Instagram Username"><br>
-                </div>
-                <div class="form-group">
-                        <input type="text" name="email" placeholder="Paypal Email"><br>
-                </div>
-                <div class="form-group">
-
-                        <label>How many keycaps would you like to purchase?</label><br>
-                        <input type="radio" name="amount" value="one"><label>1 keycap: $65 + shipping!</label><br>
-                        <input type="radio" name="amount" value="two"><label>2 keycaps: $130 + shipping!</label><br>
-                </div>
-                <div class="form-group">
-                        <label>Shipping Address<br>Please enter using the format:<br>Full Name<br>Street Address<br>City, State/Province
-                            Zipcode<br>Country</label><br>
-                        <input type="text" name="address"><br>
-                </div>
-                <div class="form-group">
-                        <label>Would you like me to contact you through Instagram DM about the fulfillment slot?</label><br>
-                        <input type="radio" name="q1" value="yes"><label>Yes</label><br>
-                        <input type="radio" name="q1" value="no"><label>No, just the Paypal invoice is fine!</label><br>
-                </div>
-                <div class="form-group">
-                        <label>Shipping to:</label><br>
-                        <input type="radio" name="shipping" value="USA"><label>USA ( $5 USD )</label><br>
-                        <input type="radio" name="shipping" value="Canada"><label>Canada ( $17 USD )</label><br>
-                        <input type="radio" name="shipping" value="International"><label>International ( $18 + USD )</label><br>
-                </div>
-                <div class="form-group">
-                        <label>Keycap Finish</label><br>
-                        <input type="radio" name="finisher" value="glaze"><label>Glossy</label><br>
-                        <input type="radio" name="finisher" value="matte"><label>Matte</label><br>
-                </div>
-                
-                    
-                        <div class="form-group form-button">
-                            <input type="submit" name="submit" id="submit-btn" class="form-submit" value="Submit" />
-                            <input type="reset" name="reset" id="reset-btn" class="form-reset" value="Reset" />
-                        </div>
-                     
-                
-               
-              
-            </form>
-                </div>
+      </nav>
+    </header>
+    <main>
+      <div class="main">
+        <div class="container">
+            <div class="signin-image">
+              <figure>
+                <img
+                  src="../images/cloudycaps-removebg.png"
+                  alt="sign up image"
+                />
+              </figure>
             </div>
+            <div class="signin-form">
+              <h2 class="form-title">Commission Form</h2>
+              <form
+                action="../PHP/fulfillment.php"
+                method="POST"
+                class="register-form"
+                id="register-form"
+              >
+                <div class="form-group">
+                  <input type="text" name="nm" placeholder="Full Name" /><br />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="ig"
+                    placeholder="Instagram Username"
+                  /><br />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="Paypal Email"
+                  /><br />
+                </div>
+                <div class="form-group">
+                  <label>How many keycaps would you like to purchase?</label
+                  ><br />
+                  <input type="radio" name="amount" value="one" /><label
+                    >1 keycap: $65 + shipping!</label
+                  ><br />
+                  <input type="radio" name="amount" value="two" /><label
+                    >2 keycaps: $130 + shipping!</label
+                  ><br />
+                </div>
+                <div class="form-group">
+                  <label
+                    >Shipping Address<br />Please enter using the format:<br />Full
+                    Name<br />Street Address<br />City, State/Province
+                    Zipcode<br />Country</label
+                  ><br />
+                  <input type="text" name="address" /><br />
+                </div>
+                <div class="form-group">
+                  <label
+                    >Would you like me to contact you through Instagram DM about
+                    the fulfillment slot?</label
+                  ><br />
+                  <input type="radio" name="q1" value="yes" /><label>Yes</label
+                  ><br />
+                  <input type="radio" name="q1" value="no" /><label
+                    >No, just the Paypal invoice is fine!</label
+                  ><br />
+                </div>
+                <div class="form-group">
+                  <label>Shipping to:</label><br />
+                  <input type="radio" name="shipping" value="USA" /><label
+                    >USA ( $5 USD )</label
+                  ><br />
+                  <input type="radio" name="shipping" value="Canada" /><label
+                    >Canada ( $17 USD )</label
+                  ><br />
+                  <input
+                    type="radio"
+                    name="shipping"
+                    value="International"
+                  /><label>International ( $18 + USD )</label><br />
+                </div>
+                <div class="form-group">
+                  <label>Keycap Finish</label><br />
+                  <input type="radio" name="finisher" value="glaze" /><label
+                    >Glossy</label
+                  ><br />
+                  <input type="radio" name="finisher" value="matte" /><label
+                    >Matte</label
+                  ><br />
+                </div>
+
+                <div class="form-group form-button">
+                  <input
+                    type="submit"
+                    name="submit"
+                    id="submit-btn"
+                    class="form-submit"
+                    value="Submit"
+                  />
+                  <input
+                    type="reset"
+                    name="reset"
+                    id="reset-btn"
+                    class="form-reset"
+                    value="Reset"
+                  />
+                </div>
+              </form>
             </div>
         </div>
-      </main>
-        
-
-    </body>
+      </div>
+    </main>
+  </body>
 </html>

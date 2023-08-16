@@ -12,6 +12,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 50;
   }
 /* .navbar a will only get applied to the <a> tag inside the div with class=navbar */
 .navbar a {
@@ -282,7 +283,10 @@ h2 {
 
 .main {
   background: #FAE0E4;
-  padding: 150px 0; }
+  padding: 150px 0; 
+  display: flex;
+  flex-direction: column;
+}
 
 .clear {
   clear: both; }
@@ -350,7 +354,7 @@ body {
 .signup-content {
   padding: 75px 0; }
 
-.signup-form, .signup-image, .signin-form, .signin-image {
+.signup-form, .signup-image {
   width: 50%;
   overflow: hidden; }
 
@@ -358,7 +362,9 @@ body {
   margin: 0 55px; }
 
 .form-title {
-  margin-bottom: 33px; }
+  margin-bottom: 33px;
+  text-align: center;
+}
 
 .signup-image {
   margin-top: 45px; }
@@ -571,14 +577,18 @@ input[type=checkbox]:not(old):checked + label > span:before {
   background: #e72734; }
 
 .signin-form {
-  margin-top: 300px;
-  margin-right: 90px;
-  margin-left: 80px; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 60px 60px;
+ }
 
-.signin-image {
-  margin-left: 110px;
-  margin-right: 20px;
-  margin-top: 10px; }
+ .signin-image {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -607,17 +617,7 @@ input[type=checkbox]:not(old):checked + label > span:before {
     /* box-sizing: border-box; */
     padding: 0 30px; }
 
-  .signin-image {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 50px;
-    order: 2;
-    -moz-order: 2;
-    -webkit-order: 2;
-    -o-order: 2;
-    -ms-order: 2; }
-
-  .signup-form, .signup-image, .signin-form, .signin-image {
+  .signup-form, .signup-image, .signin-form {
     width: auto; }
 
   .social-login {
