@@ -29,9 +29,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-//$sql = "INSERT INTO 'form_info' ('Name', 'Username', 'Email', 'Amount', 'Address', 'Contact', 'Shipping', 'Finisher') 
-        //VALUES ('$name','$insta','$mail','$amt','$add','$ques','$ship','$fin')";
-
 $sql = "INSERT INTO `fulfillment_info`(`name`, `username`, `email`, `amount`, `address`, `contact`, `shipping`, `finisher`) VALUES ('$name','$insta','$mail','$amt','$add','$ques','$ship','$fin')";
 
 $rs = mysqli_query($conn, $sql);

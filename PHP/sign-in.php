@@ -17,8 +17,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-//$sql = "INSERT INTO 'form_info' ('Name', 'Username', 'Email', 'Amount', 'Address', 'Contact', 'Shipping', 'Finisher') 
-        //VALUES ('$name','$insta','$mail','$amt','$add','$ques','$ship','$fin')";
 
 $sql ="INSERT INTO `signin_info`(`email`, `password`) VALUES ('$email','$pass')";
 

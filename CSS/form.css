@@ -6,25 +6,26 @@ body {
 
 /* .navbar will get applied to your div and then subsequently to everything that is within it */
 .navbar {
-    display: flex;
-    overflow: hidden;
-    background-color: #fffbf0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 50;
-  }
+  display: flex;
+  place-content: center;
+  overflow: hidden;
+  background-color: #fffbf0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
 /* .navbar a will only get applied to the <a> tag inside the div with class=navbar */
 .navbar a {
-  float: left;
-  display: block;
-  color: #b6977d;
-  text-align: center;
-  padding: 0px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  /* font-family: "Lucida Console", Courier, monospace; */
-  font-family: Poppins;
+float: left;
+display: block;
+color: #b6977d;
+text-align: center;
+padding: 0px 16px;
+text-decoration: none;
+font-size: 15px;
+/* font-family: "Lucida Console", Courier, monospace; */
+font-family: Poppins;
 }
 
   

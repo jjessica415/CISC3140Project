@@ -1,6 +1,6 @@
 <?php
 
-$name = $_POST['nm'];
+$full_name = $_POST['nm'];
 $email = $_POST['mail'];
 $message = $_POST['msg'];
 
@@ -20,10 +20,9 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-//$sql = "INSERT INTO 'form_info' ('Name', 'Username', 'Email', 'Amount', 'Address', 'Contact', 'Shipping', 'Finisher') 
-        //VALUES ('$name','$insta','$mail','$amt','$add','$ques','$ship','$fin')";
 
-$sql ="INSERT INTO `contact_info`(`name`, `email`, `message`) VALUES ('$name','$email','$message')";
+$sql ="INSERT INTO `contact_info`(`name`, `email`, `message`) VALUES ('$full_name','$email','$message')";
+
 
 $rs = mysqli_query($conn, $sql);
 

@@ -6,7 +6,7 @@ body {
     align-items: center;
     justify-content: center; */
     /* font-family: "PT Sans", Calibri, Tahoma, sans-serif; */
-    background-color: #fff;
+    background-color: #fae0e4;
     font-family: 'Poppins', sans-serif;
     
   }
@@ -18,26 +18,27 @@ body {
     position: fixed;
     font-family: "Lucida Console", Courier, monospace;
 }  */
-
 .navbar {
     display: flex;
+    place-content: center;
     overflow: hidden;
     background-color: #fffbf0;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 50;
   }
-
+  /* .navbar a will only get applied to the <a> tag inside the div with class=navbar */
   .navbar a {
-    float: left;
-    display: block;
-    color: #b6977d;
-    text-align: center;
-    padding: 0px 16px;
-    text-decoration: none;
-    font-size: 15px;
-    /* font-family: "Lucida Console", Courier, monospace; */
-    font-family: Poppins;
+  float: left;
+  display: block;
+  color: #b6977d;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  /* font-family: "Lucida Console", Courier, monospace; */
+  font-family: Poppins;
   }
   
   /* .navbar a:hover {
@@ -220,3 +221,4 @@ td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
+

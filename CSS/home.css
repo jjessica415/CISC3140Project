@@ -9,12 +9,28 @@ body {
 /* .navbar will get applied to your div and then subsequently to everything that is within it */
 .navbar {
     display: flex;
+    place-content: center;
     overflow: hidden;
     background-color: #fffbf0;
     position: fixed;
-    top: 0;
+    z-index: 2;
+    top: 25px;
     width: 100%;
   }
+
+#demo {
+  margin: auto;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  font-size: 20px;
+  color: #fffbf0;
+  text-align: center;
+  background-color: #b6977d;
+  padding: 8px 0px;
+  z-index: 3;
+  font-weight: 600;
+}
 /* .navbar a will only get applied to the <a> tag inside the div with class=navbar */
   .navbar a {
     float: left;
@@ -61,7 +77,7 @@ body {
 #logo {
     width:55px;
     height:55px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .underline-on-hover:hover {
@@ -72,7 +88,7 @@ body {
   top:-50px; 
   left:-35px; 
   display: inline-block; 
-  z-index:999; 
+  z-index: 0; 
   cursor: pointer; 
   -webkit-transition-property: all; 
   -webkit-transition-duration: 0.3s; 

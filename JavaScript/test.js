@@ -56,7 +56,8 @@ var x = setInterval(function() {
   document.getElementById("demo").innerHTML = "Next Keycap Design Drops In: "+ days + " days " + hours + " hours "
   + minutes + " minutes " + seconds + " seconds ";
 
-  var col = Math.floor(Math.random() * 1000000);
+  // var col = Math.floor(Math.random() * 1000000);
+  var colr = Math.floor(Math.random()*56)+200;  
   document.getElementById("demo").style.color = "#"+col;
 
     
